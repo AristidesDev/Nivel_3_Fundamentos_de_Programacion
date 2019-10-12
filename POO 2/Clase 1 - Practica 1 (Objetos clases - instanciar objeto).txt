@@ -1,0 +1,54 @@
+Clase Empresa
+
+- Definir Nombre como caracter 
+- Definir RIF como caracter
+- Definir Direccion como caracter
+- Definir Vendedores como Vendedor  
+
+
+FinClase
+
+
+
+Clase Vendedor
+
+- Definir Nombre como caracter 
+- Definir Cedula como caracter
+- Definir Sueldo como real
+- Definir auto_Vendidos como entero
+- Definir monto_Vendidos como real 
+
+
+
+FinClase
+
+
+Algoritmo
+
+Definir auto_Vendios como entero
+Definir monto_Vendidos, comision1, comision2, pago como real
+Definir vendedor1 como Vendedor
+
+Leer auto_Vendios
+Leer monto_Vendidos
+
+vendedor1 = nuevo Vendedor()
+
+vendedor1.Nombre = "Leticia"
+vendedor1.Cedula = 15265067	
+vendedor1.Sueldo = 120000
+vendedor1.auto_Vendidos = auto_Vendios
+vendedor1.monto_Vendidos = monto_Vendidos
+
+comision1 <- vendedor1.auto_Vendios*30000
+comision2 <- vendedor1.monto_Vendedos*0.18
+pago <- sueldo + comision1 + comision2
+
+Escribir "Empleado ",vendedor1.Nombre
+Escribir "Cedula ",vendedor1.Cedula
+Escribir "Comision por Autos Vendidos ",comision1
+Escribir "Comision por Monto Vendido ",comision2
+Escribir "Sueldo + comisiones ",pago
+
+
+FinAlgoritmo

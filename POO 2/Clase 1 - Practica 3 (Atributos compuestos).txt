@@ -1,0 +1,106 @@
+Clase Fecha
+
+- Definir dia como entero
+- Definir mes como entero
+- Definir anio como entero
+- fecha como caracter
+
+Metodo leerFecha()
+
+	Escribir "Digite fecha del calculo del pago Dia, Mes y Año de venta"
+	Leer dia, mes, anio
+
+FinMetodo
+
+
+
+FinClase
+
+
+Clase Vendedor
+
+- Definir Nombre como caracter 
+- Definir Cedula como caracter
+- Definir Sueldo como real
+- Definir auto_Vendidos como entero
+- Definir monto_Vendidos como real
+- Definir comision1 como real
+- Definir comision2 como real
+- Definir pago como real
+- Definir fechapago como caracter
+
+
+	Metodo LeerDatos()
+
+		Escribir "Digite la cantidad de auto vendidos"
+		Leer auto_Vendios
+
+		Escribir "Digite el monto de los auto vendidos"
+		Leer monto_Vendidos
+
+	FinMetodo
+
+
+	Metodo calcularComision1()
+
+		comision1 <- auto_Vendios*30000
+
+	FinMetodo
+
+
+
+	Metodo calcularComision2()
+		
+		comision2 <- monto_Vendios*0.18
+
+	FinMetodo
+
+
+
+	Metodo Pagar()
+
+		calcularComision1()
+		calcularComision2()
+		pago = comision1 + conmision2
+
+	FinMetodo
+
+
+	Metodo Mostrarfecha()
+
+		leerFecha()
+		fechapago = fecha.dia,"/",fecha.mes,"/",fecha.anio,"/"
+
+	FinMetodo
+
+
+FinClase
+
+
+
+Algoritmo
+
+Definir vendedor1 como Vendedor
+Definir fechapago como fecha
+
+
+fechapago = nuevo fecha()
+
+vendedor1 = nuevo Vendedor()
+vendedor1.Nombre = "Leticia"
+vendedor1.Cedula = 15265067	
+vendedor1.Sueldo = 120000
+vendedor1.Mostrarfecha()
+vendedor1.LeerDatos()
+vendedor1.Pagar()
+
+
+Escribir "Fecha de Pago ",
+Escribir "Empleado ",vendedor1.Nombre
+Escribir "Cedula ",vendedor1.Cedula
+Escribir "Comision por Autos Vendidos ",vendedor1.comision1
+Escribir "Comision por Monto Vendido ",vendedor1.comision2
+Escribir "Sueldo + comisiones ",vendodir1.pago
+
+
+FinAlgoritmo
