@@ -33,21 +33,30 @@ Publico metodo Libro(a,b,c,d,e,f,g){
 }
 
 // Sobre carga de metodos o funciones 
-publico funcion menor <- compararPagina(){
+publico funcion compararPagina(){
+
+	Definir menor como caracter
 
 	si cantidad_Paginas <= 200 entonces 
 		menor <- "Si tiene menos de 200 paginas"
 	SiNo
 		menor <- "Tiene mas de 200 paginas"
+
+	retorno menor
+
 }
 
 // Sobre carga de metodos o funciones (con parametros)
-publico funcion menor <- compararPagina(cant){
+publico funcion compararPagina(cant){
+
+	Definir menor como caracter
 
 	si cantidad_Paginas <= cant entonces 
 		menor <- "Si tiene menos de", cant ," paginas"
 	SiNo
 		menor <- "Tiene mas de", cant ," paginas"
+
+	retorno menor
 }
 
 
