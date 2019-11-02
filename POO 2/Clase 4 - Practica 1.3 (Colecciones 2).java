@@ -1,0 +1,8 @@
+Algoritmo {
+	
+	private Pantaton pant
+
+
+
+
+}
